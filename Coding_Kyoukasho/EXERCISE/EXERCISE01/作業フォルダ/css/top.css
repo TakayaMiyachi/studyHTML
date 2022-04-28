@@ -3,11 +3,110 @@
 /*----------------------------------------
 	TOPページ専用
 ----------------------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.header .header__logo {
+  margin-left: 50px;
+}
+.header .hamburger {
+  display: none;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: #37952F;
+  border: none;
+}
+.header .hamburger .hamburger__line {
+  position: absolute;
+  transform: translate(-50%, 0);
+  top: calc(50% - 18px / 2);
+  left: 50%;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 25px;
+  border-top: 2px solid #fff;
+  box-sizing: border-box;
+}
+.header .hamburger .hamburger__line:before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 25px;
+  padding-top: 6px;
+  border-bottom: 2px solid #fff;
 
+}
+.header .hamburger .hamburger__line:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 25px;
+  padding-top: 6px;
+  border-bottom: 2px solid #fff;
+}
+.header .gnav {
+
+}
+.header .gnav .gnav__list {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 18px;
+}
+.header .gnav .gnav__list .gnav__item {
+  margin-left: 36px;
+}
+.header .gnav .gnav__list .gnav__item:first-child {
+  margin-left: 0;
+}
+.header .gnav .gnav__list .gnav__item .gnav__link {
+  color: #333333;
+  text-decoration: none;
+}
+.header .gnav .gnav__list .gnav__item .gnav__link:hover {
+  color: #70cc33;
+}
+.header .gnav .gnav__list .gnav__item .gnav__link._current {
+  border-bottom: 2px solid #37952F;
+}
 
 /* mainVisual
 ----------------------------------------*/
+.mainContents {
 
+}
+.mainVisual {
+  background-color: #37952F;
+  width: 100%;
+  height: 480px;
+}
+.mainVisual .mainVisual__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 1084px;
+  margin: 0 auto;
+}
+.mainVisual .mainVisual__inner .mainVisual__catch {
+  color: #fff;
+  font-size: 36px;
+  width: 460px;
+  padding: 110px 0;
+  margin: 0 auto;
+}
+.mainVisual .mainVisual__inner .mainVisual__image {
+}
+.container {
+  max-width: 1084px;
+  margin: 0 auto;
+}
 
 /* serviceList
 ----------------------------------------*/
