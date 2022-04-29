@@ -110,7 +110,134 @@
 
 /* serviceList
 ----------------------------------------*/
-
-
+.headingL {
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+}
+.serviceList {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+.serviceList .serviceList__item {
+  display: flex;
+  flex-direction: column;
+  width: calc((100%-40px) / 3);
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+.serviceList .serviceList__item .serviceList__data {
+  padding: 15px;
+  display: grid;
+  gap: 15px;
+}
+.serviceList .serviceList__item .serviceList__data dt {
+  font-size: 20px;
+  font-weight: bold;
+}
+.serviceList .serviceList__item .serviceList__btn {
+  margin: auto 15px 15px;
+}
+.serviceList .serviceList__item .serviceList__btn .buttonM {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #37952F;
+  border: 1px solid #37952F;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+}
+.serviceList .serviceList__item .serviceList__btn .buttonM:hover {
+  background-color: #fff;
+  border: 1px solid #70cc33;
+  color: #70cc33;
+  text-decoration: none;
+}
+.section {
+  margin-top: 80px;
+}
+.centerButton {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.centerButton .buttonL {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  width: 400px;
+  border: 1px solid #37952F;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #333333;
+}
+.centerButton .buttonL:hover {
+  background-color: #37952F;
+  text-decoration: none;
+  color: #fff;
+}
 /* pickupList
 ----------------------------------------*/
+.pickupList {
+  display: flex;
+  justify-content: space-between;
+}
+.pickupList .pickupList__item {
+  width: calc((100%-60px)/4);
+  display: flex;
+  flex-direction: column;
+}
+.pickupList .pickupList__item .pickupList__title {
+  margin-top: 10px;
+  position: relative;
+  padding-left: 1em;
+}
+.pickupList .pickupList__item a {
+  text-decoration: none;
+  color: #333333;
+}
+.pickupList .pickupList__item a:hover {
+  text-decoration: none;
+  color: #70cc33;
+}
+.pickupList .pickupList__item .pickupList__title::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  padding-left: 0.2em;
+}
+
+.footer {
+  margin-top: 120px;
+  background-color: #333333;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__menu {
+  display: flex;
+}
+.footer .footer__menu li {
+  padding: 0 1em;
+  border-left: 1px solid #707070;
+}
+.footer .footer__menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .footer__menu li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+.footer .footer__copyright {
+  color: #fff;
+}
