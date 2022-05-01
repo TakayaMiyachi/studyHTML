@@ -247,6 +247,7 @@
     position: absolute;
     opacity: 0;
     z-index: -10;
+    transition: all 0.3s ease;
   }
   .header .gnav.clicked {
     opacity: 1;
@@ -284,21 +285,29 @@
     display: block;
   }
   .header .hamburger.clicked .hamburger__line {
+    transition: all 0.3s ease;
+  }
+  .header .hamburger.clicked .hamburger__line:before {
+    transition: all 0.3s ease;
+  }
+  .header .hamburger.clicked .hamburger__line:after {
+    transition: all 0.3s ease;
+  }
+  .header .hamburger.clicked .hamburger__line {
     border-top: transparent;
     position: relative;
-    top: -4px;
+    top: 0;
   }
   .header .hamburger.clicked .hamburger__line:before {
     position: absolute;
-    left: -2px;
+    left: 2px;
     transform-origin: center;
-    transform: rotate(-45deg);
-    
+    transform: rotate(-225deg);
   }
   .header .hamburger.clicked .hamburger__line:after {
     position: absolute;
-    transform: rotate(45deg);
-    left: 2px;
+    left: -2px;
+    transform: rotate(225deg);
   }
   /* PC mainVisual
   ----------------------------------------*/
