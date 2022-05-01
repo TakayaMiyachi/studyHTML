@@ -51,9 +51,6 @@
   padding-top: 6px;
   border-bottom: 2px solid #fff;
 }
-.header .gnav {
-
-}
 .header .gnav .gnav__list {
   display: flex;
   justify-content: space-between;
@@ -78,9 +75,6 @@
 
 /* mainVisual
 ----------------------------------------*/
-.mainContents {
-
-}
 .mainVisual {
   background-color: #37952F;
   width: 100%;
@@ -100,8 +94,6 @@
   width: 460px;
   padding: 110px 0;
   margin: 0 auto;
-}
-.mainVisual .mainVisual__inner .mainVisual__image {
 }
 .container {
   max-width: 1084px;
